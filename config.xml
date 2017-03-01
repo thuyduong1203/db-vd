@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.lobbyteam.playpalace.test" ios-CFBundleVersion="71" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>lobby-ionic</name>
+    <description>
+    An Ionic Framework and Cordova project.
+  </description>
+    <author email="you@example.com" href="http://example.com.com/">
+    Your Name Here
+  </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="BackgroundColor" value="0x333333" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="SuppressesIncrementalRendering" value="true" />
+
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="orientation" value="landscape" />
+    <preference name="keyboardDisplayRequiresUserAction" value="false" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
+    <platform name="ios">
+    </platform>
+    <preference name="xwalkVersion" value="19+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
+    <plugin name="cordova-plugin-facebook4" spec="~1.7.3">
+        <variable name="APP_ID" value="822586904502053" />
+        <variable name="APP_NAME" value="lobby" />
+    </plugin>
+
+  <platform name="ios">
+    <config-file platform="ios" target="*-Info.plist" parent="UISupportedInterfaceOrientations">
+      <array>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+      </array>
+    </config-file>
+
+    <config-file platform="ios" target="*-Info.plist" parent="NSCalendarsUsageDescription">
+        <string>Use for set info when unzip file *.zip</string>
+    </config-file>
+
+
+    <config-file platform="ios" target="*-Info.plist" parent="UISupportedInterfaceOrientations~ipad">
+      <array>
+
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+
+      </array>
+    </config-file>
+
+    <config-file platform="ios" target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+      <string>Use for set info when unzip file *.zip</string>
+    </config-file>
+    <config-file platform="ios" target="*-Info.plist" parent="NSCalendarsUsageDescription">
+      <string>We need to access photo library to get image for avatar of user</string>
+    </config-file>
+    <config-file platform="ios" target="*-Info.plist" parent="NSCameraUsageDescription">
+      <string>We need to access camera to take image for avatar of user</string>
+    </config-file>
+    <config-file platform="ios" target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+      <string>Use for set info when unzip file *.zip</string>
+    </config-file>
+
+  </platform>
+
+</widget>
